@@ -1,0 +1,4 @@
+<h1><%=project_version.id+"-"+project_version.project_name%></h1>
+<% project_version.version.forEach(function(version){ %>
+	<li><a href="/version/show/<%= version.id%>"><%= version.id +"-'" +version.version+"'" %></li>
+<% }) %>
